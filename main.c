@@ -24,6 +24,8 @@ void main(void) {
   T0CON=0b00000011; /*Configuración del timer0 correspondiente 
                      * a un tiempo aproximado de 0.5seg usando la ecuación
                      * (2^N)-((Tsflujo*Fbus)/PS)= Precarga
+                     * la frecuencia de Bus "Fbus" es igual a la drecuencia de reloj
+                     * divididad 4, en esté caso 8MHz/4 = 2MHz
                      * La precarga debe de ser menor a 2^N que es la
                      * resolución del timer 
                      * 6^16 -((0.5seg*2x10^6Hz)/16)=3036
